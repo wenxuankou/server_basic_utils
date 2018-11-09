@@ -1,0 +1,7 @@
+[core]
+    autocrlf = input
+    editor = vim
+[push]
+    default = simple
+[alias]
+  mylog = log --graph --pretty=format:\"%Cblue%ci - %Cred%h - %C(yellow)%ae%Creset(%an) %Cgreen%s (%Cred%ar)\"
