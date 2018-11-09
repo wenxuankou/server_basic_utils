@@ -13,17 +13,11 @@ install_utils() {
   sudo apt-get install htop -y
   sudo apt-get install tree -y
 
-  _install_git
   _install_ack
   _install_vim
   _install_tmux
   _install_clang
   _install_zsh
-}
-
-_install_git() {
-  sudo apt-get install git -y
-  cp ./.gitconfig "${HOME_PATH}/"
 }
 
 _install_ack() {
@@ -47,6 +41,7 @@ _install_zsh() {
   chsh -s /bin/zsh
   git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
   cp ./ruby-man.zsh-theme "${HOME_PATH}/.oh-my-zsh/themes/"
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${HOME_PATH}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
   cp ./.zshrc "${HOME_PATH}/"
 }
 
