@@ -47,7 +47,7 @@ _install_zsh() {
 }
 
 _install_clang_format() {
-  sudo apt-get install clang_format -y
+  sudo apt-get install clang-format -y
   cp ./clang-foramt "${HOME_PATH}/"
 }
 
