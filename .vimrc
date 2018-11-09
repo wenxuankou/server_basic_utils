@@ -128,14 +128,14 @@ Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#whitespace#enabled=0
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
 
 Plugin 'edkolev/tmuxline.vim'
 
-" let g:airline#extensions#tabline#left_sep = "\uE0C4"
+let g:airline#extensions#tabline#left_sep = "\uE0C4"
 " let g:airline#extensions#tabline#left_alt_sep = "\uE0BD"
-" let g:airline_left_sep = "\uE0C4"
+let g:airline_left_sep = "\uE0C4"
 " let g:airline_right_sep = "\uE0C5"
 
 map <C-H> :bp<CR>

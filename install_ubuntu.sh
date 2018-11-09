@@ -12,11 +12,12 @@ install_utils() {
   sudo apt-get install ctags -y
   sudo apt-get install htop -y
   sudo apt-get install tree -y
+  sudo apt-get install gcc -y
 
   _install_ack
   _install_vim
   _install_tmux
-  _install_clang
+  _install_clang_format
   _install_zsh
 }
 
@@ -27,26 +28,26 @@ _install_ack() {
 
 _install_vim() {
   sudo apt-get install vim -y
-  cp ./vimrc "${HOME_PATH}/"
+  cp ./.vimrc "${HOME_PATH}/"
   cp -rf ./.vim "${HOME_PATH}/"
 }
 
 _install_tmux() {
   sudo apt-get install tmux -y
-  cp ./tmux.conf "${HOME_PATH}/"
+  cp ./.tmux.conf "${HOME_PATH}/"
 }
 
 _install_zsh() {
   sudo apt-get install zsh -y
-  chsh -s /bin/zsh
+  sudo chsh -s /bin/zsh
   git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
   cp ./ruby-man.zsh-theme "${HOME_PATH}/.oh-my-zsh/themes/"
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${HOME_PATH}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
   cp ./.zshrc "${HOME_PATH}/"
 }
 
-_install_clang() {
-  sudo apt-get install llvm clang -y
+_install_clang_format() {
+  sudo apt-get install clang_format -y
   cp ./clang-foramt "${HOME_PATH}/"
 }
 
