@@ -43,7 +43,9 @@ more shortcuts please refer config file `~/.vimrc`, `~/.tmux.conf`
 
 `leader` => `,`
 
-`search file` => `<leader> + <leader> + p`
+`search file` => `<leader> + p`
+
+`easy motion` => `<leader> + <leader> + s`
 
 `directory` => `Ctrl + y`
 
