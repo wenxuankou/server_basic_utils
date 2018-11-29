@@ -13,6 +13,8 @@ install_utils() {
   sudo apt-get install htop -y
   sudo apt-get install tree -y
   sudo apt-get install gcc -y
+  sudo apt-get install cloc -y
+  sudo apt-get install tig -y
 
   _install_ack
   _install_vim

@@ -16,6 +16,8 @@
 10. zsh
 11. clang-format
 12. UbuntuMono Fonts
+13. cloc
+14. tig
 
 # Install
 
