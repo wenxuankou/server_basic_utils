@@ -217,6 +217,10 @@ Plugin 'mileszs/ack.vim'
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 set shellpipe=>
+" cscope
+Plugin 'brookhong/cscope.vim'
+nnoremap <leader>j :call CscopeFindInteractive(expand('<cword>'))<CR>
+nnoremap <leader>l :call ToggleLocationList()<CR>
 
 call vundle#end()
 filetype plugin indent on " required! /** vimrc文件配置结束 **/

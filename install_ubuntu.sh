@@ -15,6 +15,7 @@ install_utils() {
   sudo apt-get install gcc -y
   sudo apt-get install cloc -y
   sudo apt-get install tig -y
+  sudo apt-get install cscope -y
 
   _install_ack
   _install_vim
